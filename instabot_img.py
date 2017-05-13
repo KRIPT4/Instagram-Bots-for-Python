@@ -81,19 +81,14 @@ def mainExe():
 	print("Elapsed time: %.1f seconds." % elapsed_time)
 
 def retryElement(xpath):
-	match = False
 	for i in range(0,50):
 		try:
 			element = driver.find_element_by_xpath(xpath)
-			match = True
-			break
+			return element
 		except Exception as e:
 			time.sleep(0.1)
 			continue
-	if(match):
-		return element
-	else:
-		brikear(("no se encontro elemento %s" % xpath))
+	brikear(("no se encontro elemento xpath: %s" % xpath))
 
 def brikear(msg):
 	print(msg)
