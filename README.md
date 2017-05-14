@@ -24,7 +24,14 @@ To Automated login and Post Image Massive:
 
 	$ py instabot_imgmassive.py
 
+To Automated login and Like Heart Massive:
+
+	$ py instabot_likeheartmassive.py
+
 ## Changelog
+
+**v1.5** May 14, 2017
+- Add instabot_likeheartmassive.py
 
 **v1.4** May 13, 2017
 - Add instabot_imgmassive.py
