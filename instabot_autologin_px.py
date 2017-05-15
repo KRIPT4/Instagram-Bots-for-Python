@@ -22,8 +22,13 @@ from selenium import webdriver
 # For automating data input
 from selenium.webdriver.common.keys import Keys
 
+# For Proxy
+from selenium.webdriver.common.proxy import *
+
 # For providing custom configurations for Chrome to run
 from selenium.webdriver.chrome.options import Options
+
+NewProxy = "PROXYIPADDRESS:PORT"
 
 start_time = time.time()		# TIME EXECUTION TEST
 
@@ -35,6 +40,7 @@ chrome_options.add_argument('--disable-extensions')
 chrome_options.add_argument('--allow-running-insecure-content')
 chrome_options.add_argument('--ignore-ssl-errors=true --debug=true')
 chrome_options.add_argument('--window-size=375,773')
+chrome_options.add_argument('--proxy-server=%s' % NewProxy)
 chrome_options.add_experimental_option('prefs', {
     'credentials_enable_service': False,
     'profile': {

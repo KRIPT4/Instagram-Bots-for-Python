@@ -16,19 +16,34 @@ To Automated login:
 
 	$ py instabot_autologin.py
 
+NOTE: instabot_autologin_px.py (Proxy Version)
+
 To Automated login and Post Image:
 
 	$ py instabot_img.py
+
+NOTE: instabot_img.py (Proxy Version)
 
 To Automated login and Post Image Massive:
 
 	$ py instabot_imgmassive.py
 
+NOTE: instabot_imgmassive.py (Proxy Version)
+
 To Automated login and Like Heart Massive:
 
 	$ py instabot_likeheartmassive.py
 
+NOTE: instabot_likeheartmassive_px.py (Proxy Version)
+
 ## Changelog
+
+**v1.6** May 15, 2017
+- Fix instabot_autologin.py
+- Add instabot_autologin_px.py (Proxy Version)
+- Add instabot_img_px.py (Proxy Version)
+- Add instabot_imgmassive_px.py (Proxy Version)
+- Add instabot_likeheartmassive_px.py (Proxy Version)
 
 **v1.5** May 14, 2017
 - Add instabot_likeheartmassive.py
