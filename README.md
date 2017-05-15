@@ -36,7 +36,17 @@ To Automated login and Like Heart Massive:
 
 NOTE: instabot_likeheartmassive_px.py (Proxy Version)
 
+To Automated login and Comment Massive:
+
+	$ py instabot_commentmassive.py
+	
+NOTE: instabot_commentmassive_px.py (Proxy Version)
+
 ## Changelog
+
+**v1.7** May 15, 2017
+- Add instabot_commentmassive.py
+- Add instabot_commentmassive_px.py (Proxy Version)
 
 **v1.6** May 15, 2017
 - Fix instabot_autologin.py
