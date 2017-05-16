@@ -46,6 +46,7 @@ NOTE: instabot_commentmassive_px.py (Proxy Version)
 
 **v1.8** May 16, 2017
 - Add disable-infobars.
+- Add enable-precise-memory-info.
 
 **v1.7** May 15, 2017
 - Add instabot_commentmassive.py

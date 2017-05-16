@@ -34,6 +34,7 @@ chrome_options = Options()
 chrome_options.add_argument("--disable-infobars")
 chrome_options.add_argument('--disable-extensions')
 chrome_options.add_argument('--allow-running-insecure-content')
+chrome_options.add_argument('--enable-precise-memory-info')
 chrome_options.add_argument('--ignore-ssl-errors=true --debug=true')
 chrome_options.add_argument('--window-size=375,773')
 chrome_options.add_experimental_option('prefs', {
