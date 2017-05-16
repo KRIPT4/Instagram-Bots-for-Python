@@ -44,6 +44,9 @@ NOTE: instabot_commentmassive_px.py (Proxy Version)
 
 ## Changelog
 
+**v1.8** May 16, 2017
+- Add disable-infobars.
+
 **v1.7** May 15, 2017
 - Add instabot_commentmassive.py
 - Add instabot_commentmassive_px.py (Proxy Version)

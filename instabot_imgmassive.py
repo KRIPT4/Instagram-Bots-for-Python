@@ -32,6 +32,7 @@ from selenium.webdriver.chrome.options import Options
 # More information at: https://sites.google.com/a/chromium.org/chromedriver/mobile-emulation
 mobile_emulation = { "deviceName": "Google Nexus 5"}
 chrome_options = Options()
+chrome_options.add_argument("--disable-infobars")
 chrome_options.add_argument('--disable-extensions')
 chrome_options.add_argument('--allow-running-insecure-content')
 chrome_options.add_argument('--ignore-ssl-errors=true --debug=true')
