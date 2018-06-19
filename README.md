@@ -6,9 +6,9 @@
 
 ## Requirements
 
-* Python 3.6.1 (https://www.python.org/)
-* Selenium (pip install selenium)
-* win32com (pip install pypiwin32)
+* Python 3.6.5 (https://www.python.org/)
+* Selenium (py -m pip install selenium)
+* win32com (py -m pip install pypiwin32)
 
 ## Execute
 
@@ -43,6 +43,9 @@ To Automated login and Comment Massive:
 NOTE: instabot_commentmassive_px.py (Proxy Version)
 
 ## Changelog
+
+**v1.9** Jun 19, 2018
+- Upgrade.
 
 **v1.8** May 16, 2017
 - Add disable-infobars.
@@ -84,4 +87,4 @@ NOTE: instabot_commentmassive_px.py (Proxy Version)
 ## License
 
 Instagram Bots for Python is [GPL-3.0](https://github.com/KRIPT4/Instagram-Bots-for-Python/blob/master/LICENSE) Licensed  
-Copyright © 2017 KRIPT4 (https://github.com/KRIPT4)
+Copyright © 2017-2018 KRIPT4 (https://github.com/KRIPT4)

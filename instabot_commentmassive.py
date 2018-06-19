@@ -28,7 +28,7 @@ from selenium.webdriver.chrome.options import Options
 
 # Select which device you want to emulate by uncommenting it
 # More information at: https://sites.google.com/a/chromium.org/chromedriver/mobile-emulation
-mobile_emulation = { "deviceName": "Google Nexus 5"}
+mobile_emulation = { "deviceMetrics": { "width": 360, "height": 640, "pixelRatio": 3.0 }, "userAgent": "Mozilla/5.0 (Linux; Android 4.2.1; en-us; Nexus 5 Build/JOP40D) AppleWebKit/535.19 (KHTML, like Gecko) Chrome/18.0.1025.166 Mobile Safari/535.19" }
 chrome_options = Options()
 chrome_options.add_argument("--disable-infobars")
 chrome_options.add_argument('--disable-extensions')
@@ -47,22 +47,27 @@ global driver
 
 def mainExe():
 	global driver
-	driver  = webdriver.Chrome(executable_path = 'chromedriver.exe', chrome_options = chrome_options)
+	driver  = webdriver.Chrome(executable_path = '?:\PATH\TO\chromedriver.exe', chrome_options = chrome_options)
 	varUSER = 'USERNAME'
 	varPASS = 'PASSWORD'
 	varTEXT = 'COMMENT!'
 
 	start_time = time.time()		# TIME EXECUTION TEST
 	time.sleep(2)
-	driver.get('https://www.instagram.com/')
+	driver.get('https://www.instagram.com/accounts/login/')
 	time.sleep(1)
 
 	## LOGIN
 	driver.execute_script("window.scrollTo(0, document.body.scrollHeight);")
-	retryElement('//*[@id="react-root"]/section/main/article/div/div[2]/p/a').click()
 	retryElement('//*[@name = "username"]').send_keys(varUSER)
 	retryElement('//*[@name = "password"]').send_keys(varPASS)
-	retryElement('//*[@id="react-root"]/section/main/article/div/div[1]/div/form/span/button').click()
+	retryElement('//*[@id="react-root"]/section/main/article/div/div/div/form/span/button').click()
+	## END LOGIN
+
+	## SAVE LOGIN SESION
+	retryElement('//*[@id="react-root"]/section/main/div/section/div/span/button').click()
+	## END SAVE LOGIN SESION
+	
 	time.sleep(2)
 	driver.execute_script('divsToHide=document.getElementsByClassName("_bfc7q");divsToHide[0].style.display="none";')
 	time.sleep(2)
